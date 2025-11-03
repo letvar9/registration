@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+:root {
+  --main-color: #8f2323;
+  --sub-color: #9d9393;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 150px;
+  flex-wrap: wrap;
+}
+.container .text h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--main-color);
+  margin: 0;
+}
+.container .text p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  font-style: italic;
+  text-shadow: 0 0 10px var(--main-color);
+  margin-top: 10px;
+}
+.container form {
+  box-shadow: 0 0 12px var(--sub-color);
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 375px;
+  max-width: 400px;
+  background-color: #fff;
+}
+.name {
+  display: flex;
+  gap: 5px;
+}
+.select-group {
+  display: flex;
+  gap: 5px;
+}
+.select-group select {
+  font-size: 14px;
+  appearance: none;
+  background-image: url(arrow.png);
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  background-size: 14px;
+  cursor: pointer;
+}
+.gender {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.gender label {
+  border: 1px solid var(--sub-color);
+  flex: 1;
+  padding: 12px 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.container form .input {
+  display: block;
+  margin-bottom: 30px;
+  padding: 12px 15px;
+  width: 100%;
+  border: 1px solid var(--sub-color);
+  border-radius: 5px;
+  outline: none;
+  color: #000;
+}
+.container form input[type="submit"] {
+  background-color: var(--main-color);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container form a {
+  display: block;
+  text-decoration: none;
+}
+.container form a:first-of-type {
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  color: #000;
+  font-size: 15px;
+}
+.container form a:last-of-type {
+  background-color: var(--main-color);
+  width: fit-content;
+  margin: 0 auto 25px;
+  padding: 16px 20px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
